@@ -1,0 +1,165 @@
+:root {
+    --primary-morado: #4F0341;
+    --secundary-morado: #6A5ACD;
+    --third-morado: #C9C3E3;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    background-color: #F5F5F5;
+    top: 0;
+    z-index: 1;
+
+}
+
+body{
+    background-color: #F5F5F5 !important;
+    font-family: 'Helvetica', sans-serif;
+}
+
+
+.navbar-Container {
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.img-Navbar{
+    height: 4rem;
+    transition: .5s;
+}
+
+.img-Navbar:hover{
+    transform: scale(1.1);
+}
+
+.navbar-Button {
+    border: none;
+    cursor: pointer;
+    padding: 0rem 1rem;
+    font-size: 1.6rem;
+    background-color: none;
+    list-style: none;  
+    text-decoration: none;  
+    color: purple;
+    transition: .5s;
+    font-weight: bold;
+    
+}
+
+.navbar-Button.active{
+    color: var(--primary-azul);
+}
+
+.navbar-Button:hover {
+    color: #4a91c8;
+}
+
+.navbar-toggler{
+    border: 1px var(--primary-morado) solid !important;
+    background: none;
+    height: 3rem;
+    width: 3rem;
+    padding: 0 !important;
+    
+}
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2886, 179, 250, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+} 
+
+.button-Close{
+    background: none;
+    border: none;
+    margin: calc(-.5* var(--bs-offcanvas-padding-y)) calc(-.5* var(--bs-offcanvas-padding-x)) calc(-.5* var(--bs-offcanvas-padding-y)) auto;
+    padding: calc(var(--bs-offcanvas-padding-y)* .5) calc(var(--bs-offcanvas-padding-x)* .5);;
+}
+
+
+.home-container {
+    margin-top: 5rem;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+}
+
+
+.bg-image {
+    background-image: url("../img/edificio.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(3px); /* Ajusta el valor de blur según tus preferencias */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+
+.text-overlay {
+    position: relative;
+    z-index: 1;
+}
+
+.title-Home{
+    color: white;
+    font-size: 5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    text-shadow: 2px 2px 5px rgba(14, 13, 13, 0.5);
+    z-index: 1;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+
+
+.navbar-Container {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.off-Canvas-Header{
+    color: white;
+}
+
+.off-Canvas{
+    background-color: rgb(235, 234, 234) !important;
+}
+
+.offcanvas.offcanvas-end{
+    width: 65% !important;
+    transition: all 0.4s ease;
+}
+
+.navbar-Button{
+    font-size: 2rem;
+    letter-spacing: 0;
+}
+
+.nav-item{
+    padding-top: 2rem;
+}
+
+ }
