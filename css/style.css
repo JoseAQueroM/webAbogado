@@ -3,7 +3,7 @@
     --secundary-morado: #9560D2;
     --third-morado: #CCB0E9;
     --container-gris: #F9F9FB;
-    --p-gris: #a2a2a2;
+    --p-gris: #908e8e;
 }
 
 *{
@@ -24,10 +24,15 @@ body { font-family: 'Arial', sans-serif; }
 header{
     position: fixed;
     width: 100%;
-    background-color: white;
+    background-color: transparent; /* antes era white */
     top: 0;
-    z-index: 1;
+    z-index: 10;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
 
+header.scrolled{
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 .navbar-Container {
@@ -54,8 +59,8 @@ header{
     background-color: none;
     list-style: none;  
     text-decoration: none;  
-    color: black;
-    transition: .5s;
+    color: #ffffff; 
+    transition: color 0.3s ease;
     font-weight: bold;
     
 }
@@ -66,6 +71,32 @@ header{
 
 .navbar-Button:hover {
     color: purple;
+}
+
+header .navbar-Button {
+  color: #ffffff;
+  transition: color 0.25s ease;
+}
+
+header .img-Navbar {
+  transition: filter 0.25s ease, opacity 0.25s ease;
+}
+
+/* Estado al hacer scroll: fondo blanco y links oscuros */
+header.scrolled .navbar-Button {
+  color: #0b0b0b; /* negro suave para mejor contraste */
+}
+
+header.scrolled .navbar-Button:hover {
+  color: var(--primary-morado);
+}
+
+/* Ajuste para el botón toggler (cuando el header cambia) */
+header .navbar-toggler {
+  border-color: rgba(255,255,255,0.35) !important;
+}
+header.scrolled .navbar-toggler {
+  border-color: var(--primary-morado) !important;
 }
 
 .navbar-toggler{
@@ -254,10 +285,47 @@ header{
 }
 
 .p-Sobremi{
-    font-size: 1.8rem;
-    line-height: 2;
+    font-size: 1.7rem;
+    color: var(--p-gris);
 }
 
+/* Nuevos estilos para secciones añadidas */
+.cta-banner {
+  background: linear-gradient(90deg, var(--secundary-morado) 0%, var(--primary-morado) 100%);
+  color: white;
+  box-shadow: 0 6px 20px rgba(85, 32, 158, 0.15);
+}
+
+.about-container .profile-img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border: 6px solid rgba(255,255,255,0.6);
+}
+
+.testimonial-card {
+  background: linear-gradient(180deg, #ffffff 0%, #faf8ff 100%);
+  border: 1px solid #eee;
+  border-radius: 10px;
+}
+
+.contact-card {
+  border-radius: 10px;
+}
+
+.site-footer {
+  border-top: 1px solid #eee;
+  background-color: var(--container-gris);
+}
+
+.title-Datos{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.contacto-Datos{
+    font-size: 1.4rem;
+}
 
 @media (max-width: 768px) {
 
@@ -292,4 +360,9 @@ header{
     padding-top: 2rem;
 }
 
- }
+.about-container .profile-img {
+    width: 160px;
+    height: 160px;
+  }
+  .cta-banner { padding: 2rem 1.2rem; }
+}
