@@ -13,55 +13,31 @@
     <body>
         <header>
             <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-        
-                  <a class="navbar-brand"  href="#">
-                    <img class="img-Navbar" src="./img/logo-blanco.png" alt="" srcset="">
-                  </a>
-        
-                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
-                    
-                    <span class="navbar-toggler-icon "></span>
-        
-                  </button>
-                  
-                    <div class="offcanvas offcanvas-end off-Canvas" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
-                    
-                        <div class="offcanvas-header off-Canvas-Header">
-                            <button type="button" class="button-Close" data-bs-dismiss="offcanvas" aria-label="Close">
-        
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                    <path d="M18 6l-12 12" />
-                                    <path d="M6 6l12 12" />
-                                  </svg>
-        
-                            </button>
-                        </div>
-        
-        
-                        <div class="navbar-Container">
-        
-                        <ul class="navbar-nav">
-        
-                            <li class="nav-item">
-                              <a class="navbar-Button" href="#quienessomos">Quienes Somos</a>
-                            </li>
-        
-                            <li class="nav-item">
-                              <a class="navbar-Button" href="#servicios">Servicios</a>
-                            </li>
-        
-                            <li class="nav-item">
-                              <a class="navbar-Button" href="#contacto">Contacto</a>
-                            </li>
-        
-                          </ul>
-        
-                        </div>
-                    </div>
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                  <img class="img-Navbar" src="./img/logo-blanco.png" alt="Logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                  aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="navbar-Button nav-link" href="#quienessomos">Quienes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="navbar-Button nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="navbar-Button nav-link" href="#contacto">Contacto</a>
+                    </li>
+                  </ul>
                 </div>
-              </nav>
+              </div>
+            </nav>
         </header>
 
         <main>
@@ -97,7 +73,7 @@
 
              <div class="container-fluid" style="background-color: #F9F9FB;">
               <div class="container py-5">
-              <div class="row">
+              <div class="row mb-5">
 
                 <div class="servicios-Container">
                   <h1 class="titles-H1 mb-5">Áreas de Práctica</h1>
@@ -198,7 +174,7 @@
               <div class="col-md-8">
                 <h2 class="titles-H1 mb-5">Raymar Molina — Abogada Civil</h2>
                   <p class="p-Sobremi mb-5">
-                  Soy abogada en materia Civil, familiar y administrativa con 3 años de experiencia asesorando y representando a particulares y empresas en procesos Civiles, familiares, Corporativo y Laborales. He trabajado en la redacción y revisión de contratos y resolución de conflictos de diversos casos legales, siempre con un enfoque de defensa de los intereses de mis clientes y en la busqueda de soluciones prácticas.
+                  Soy abogada en materia Civil, Familiar y Administrativa con 3 años de experiencia asesorando y representando a particulares y empresas en procesos Civiles, familiares, Corporativo y Laborales. He trabajado en la redacción y revisión de contratos y resolución de conflictos de diversos casos legales, siempre con un enfoque de defensa de los intereses de mis clientes y en la busqueda de soluciones prácticas.
                   </p>
 
                   <p class="p-Sobremi mb-5">
@@ -225,36 +201,38 @@
 <!-- /Sobre mí -->
 
 <!-- Contacto -->
-<section id="contacto" class="container form-Container my-5">
-  <h2 class="titles-H1 mb-4 text-center mb-5">Contacto</h2>
-  <div class="row g-4">
-    <div class="col-md-6">
-      <div class="card p-4 shadow-sm contact-card">
-        <h5 class="title-Datos">Datos de contacto</h5>
-        <p class="contacto-Datos mb-1"><strong>Teléfono: </strong> <a href="tel:+584246751816">+58 424-6751816</a></p>
-        <p class="contacto-Datos mb-1"><strong>Email: </strong> <a href="mailto:Abgraymarmolina@gmail.com">Abgraymarmolina@gmail.com</a></p>
-        <p class="contacto-Datos mb-1"><strong>Dirección: </strong>Las Adjuntas, Falcon, Punto Fijo</p>
-        <hr>
-        <p class="contactos-P">Puedes usar el siguiente formulario para solicitar una cita o enviar documentos.</p>
+<section id="contacto" class="container-fluid form-Container my-5" style="background-color: #F9F9FB;">
+  <div class="container py-5">
+    <h2 class="titles-H1 mb-4 text-center mb-5">Contacto</h2>
+    <div class="row g-4 mb-5">
+      <div class="col-md-6">
+        <div class="card p-4 shadow-sm contact-card">
+          <h5 class="title-Datos">Datos de contacto</h5>
+          <p class="contacto-Datos mb-1"><strong>Teléfono: </strong> <a href="tel:+584246751816">+58 424-6751816</a></p>
+          <p class="contacto-Datos mb-1"><strong>Email: </strong> <a href="mailto:Abgraymarmolina@gmail.com">Abgraymarmolina@gmail.com</a></p>
+          <p class="contacto-Datos mb-1"><strong>Dirección: </strong>Las Adjuntas, Falcon, Punto Fijo</p>
+          <hr>
+          <p class="contactos-P">Puedes usar el siguiente formulario para solicitar una cita o enviar documentos.</p>
+        </div>
       </div>
-    </div>
 
-    <div class="col-md-6">
-      <form class="card p-4 shadow-sm" action="https://formspree.io/f/yourformid" method="POST">
-        <div class="mb-3">
-          <label for="name" class="label-Contacto">Nombre</label>
-          <input id="name" name="name" class="form-control" required>
-        </div>
-        <div class="mb-3">
-          <label for="email" class="label-Contacto">Correo electrónico</label>
-          <input id="email" name="email" type="email" class="form-control" required>
-        </div>
-        <div class="mb-3">
-          <label for="message" class="label-Contacto">Mensaje / Breve descripción del caso</label>
-          <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
-      </form>
+      <div class="col-md-6">
+        <form class="card p-4 shadow-sm" action="https://formspree.io/f/yourformid" method="POST">
+          <div class="mb-3">
+            <label for="name" class="label-Contacto">Nombre</label>
+            <input id="name" name="name" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="label-Contacto">Correo electrónico</label>
+            <input id="email" name="email" type="email" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="label-Contacto">Mensaje / Breve descripción del caso</label>
+            <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+        </form>
+      </div>
     </div>
   </div>
 </section>
