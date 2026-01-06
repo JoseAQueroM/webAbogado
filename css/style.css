@@ -4,6 +4,7 @@
     --third-morado: #CCB0E9;
     --container-gris: #F9F9FB;
     --p-gris: #908e8e;
+    --p-caracteristica: #4f4e4e;
 }
 
 *{
@@ -250,6 +251,13 @@ header.scrolled .navbar-toggler {
     margin-top: 5rem;
     /* font-family: 'Times New Roman', Times, serif; */
     font-weight: 600;
+    text-align: center;
+}
+
+.p-H1{
+    font-size: 1.6rem;
+    color: #969696;
+    text-align: center;
 }
 
 .card-Services{
@@ -289,6 +297,15 @@ header.scrolled .navbar-toggler {
     color: var(--p-gris);
 }
 
+.caracteristica-aboutMe{
+    font-size: 1.6rem;
+    color: var(--p-caracteristica);
+}
+
+.span-caracteristicas{
+    margin-left: 5px;
+}
+
 /* Nuevos estilos para secciones añadidas */
 .cta-banner {
   background: linear-gradient(90deg, var(--secundary-morado) 0%, var(--primary-morado) 100%);
@@ -319,16 +336,47 @@ header.scrolled .navbar-toggler {
 }
 
 .title-Datos{
-    font-size: 1.6rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
 }
 
 .contacto-Datos{
+    font-size: 1.5rem;
+}
+
+.label-Contacto{
     font-size: 1.4rem;
+}
+
+.contactos-P{
+    font-size: 1.4rem;
+    color: var(--p-gris);
+}
+
+.h5-Footer{
+    font-size: 1.6rem;
+}
+
+.info-Footer{
+    font-size: 1.2rem;
+}
+
+.derechos-Footer{
+  font-size: 1.1rem;
 }
 
 @media (max-width: 768px) {
 
+
+.about-container {
+  padding-left: 1.6rem !important;
+  padding-right: 1.6rem !important;
+}
+
+.form-Container{
+    padding-left: 1.6rem !important;
+    padding-right: 1.6rem !important;
+}
 
 .navbar-Container {
     display: flex;
