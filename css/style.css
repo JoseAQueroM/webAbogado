@@ -13,11 +13,6 @@
     box-sizing: border-box;
 }
 
-.toast-text {
-    font-size: 1.6rem;
-    font-weight: bold;
-}
-
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;

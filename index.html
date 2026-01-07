@@ -307,15 +307,18 @@
     btn.disabled = true;
 
     // Envía el formulario (serviceId, templateId)
-    emailjs.sendForm('service_pqdiv9d', 'template_njlcrhg', form)
+    emailjs.sendForm('service_pqdiv9', 'template_njlcrhg', form)
       .then(function () {
         Toastify({
           text: "✅ Mensaje enviado correctamente.",
           duration: 3000,
           gravity: "bottom",
           position: "right",
-          backgroundColor: "#55209E",
+          backgroundColor: "#207e3b",
           stopOnFocus: true,
+          style: {
+            fontSize: "1.4rem",      
+          }
         }).showToast();
 
         form.reset();
@@ -327,8 +330,11 @@
           duration: 4000,
           gravity: "bottom",
           position: "right",
-          backgroundColor: "#55209E",
+          backgroundColor: "#9b2626",
           stopOnFocus: true,
+          style: {
+            fontSize: "1.4rem",      
+          }
         }).showToast();
 
         console.error('EmailJS error:', error);
